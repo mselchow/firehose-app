@@ -1,14 +1,16 @@
-<div class="shadowed-box">
-	<h2>
-		I love coding
+<div class="row-fluid">
+	<div class="span6 offset3 text-center shadowed-box">
+		<h1 class="custom-splash-font">
+			Add your update!
+		</h1>
 
+		<br />
 		<%= simple_form_for @pic do |f| %>
-			<%= f.input :hour, label: 'Hour:' %>
-			<%= f.input :emotion, label: 'How do you feel?' %>
-			<%= f.input :learned, label: 'What did you learn?' %>
-
-			<%= f.submit 'Save' %>
+			<%= f.input :hour, label: 'Enter the hour:', placeholder: '1, 2, 3, etc.' %>
+			<%= f.input :emotion, label: 'How do you feel?', placeholder: 'Stoked, excited, confused' %>
+			<%= f.input :learned, label: 'What did you learn?', placeholder: 'HTML, CSS3, Rails, Github' %>
+		<br />
+			<%= f.submit 'Save', :class => 'btn btn-large btn-warning' %>
 		<% end %>
-
-	</h2>
+	</div>
 </div>
