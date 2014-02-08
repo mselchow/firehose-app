@@ -1,0 +1,14 @@
+<div class="shadowed-box">
+	<h2>
+		I love coding
+
+		<%= simple_form_for @pic do |f| %>
+			<%= f.input :hour, label: 'Hour:' %>
+			<%= f.input :emotion, label: 'How do you feel?' %>
+			<%= f.input :learned, label: 'What did you learn?' %>
+
+			<%= f.submit 'Save' %>
+		<% end %>
+
+	</h2>
+</div>
