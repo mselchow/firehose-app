@@ -7,7 +7,9 @@ class PicUploader < CarrierWave::Uploader::Base
   # include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
-  storage :file
+  # (we use fog for Amazon S3) -- we want to do this conditionally depending on where we are
+  # and we made this change in carrierwave.rb
+  #storage :file
   # storage :fog
 
   # Override the directory where uploaded files will be stored.

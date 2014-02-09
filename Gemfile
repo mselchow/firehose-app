@@ -36,6 +36,8 @@ gem "twitter-bootstrap-rails"
 gem "simple_form"
 # For file uploading
 gem 'carrierwave'
+# For S3 support with carrierwave
+gem "fog", "~> 1.3.1"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
