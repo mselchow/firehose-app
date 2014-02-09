@@ -3,12 +3,19 @@
 /* This site was hacked together by Michael with lots of love. */
 
 .shadowed-box {
-    box-shadow: 0 0 5px rgba(36, 32, 33, 0.8);
+    /*box-shadow: 0 0 5px rgba(36, 32, 33, 0.8);*/
     background-color: rgba(36, 32, 33, 0.6);
     padding: 2%;
     padding-left: 4%;
     padding-right: 4%;
     margin-top: 40px;
+
+    padding: 20px;
+    margin: 10px;
+    color: #fff;
+    border: 2px dashed #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #000, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
 }
 
 body {
